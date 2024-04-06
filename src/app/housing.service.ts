@@ -6,7 +6,7 @@ import { HousingLocation } from './housing-location';
 })
 export class HousingService {
   // readonly baseUrl = 'https://angular.io/assets/images/tutorials/faa';
-  url = 'http://localhost:3000/locations';
+  url = 'https://angular-docs-project.vercel.app/locations';
 
   async getAllHousingLocations(): Promise<HousingLocation[]> {
     const data = await fetch(this.url);
